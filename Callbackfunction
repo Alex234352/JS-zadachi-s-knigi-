@@ -38,3 +38,26 @@ return elem.map((item ) => item[0].toLowerCase() + item.slice(1))
 
 let str = ['Alena' , 'Katya' , 'Masha'];
 console.log(each(str,getLower ))
+
+
+//Дан массив с числами. С помощью созданной нами функции each найдите произведение каждого элемента массива на его порядковый номер.
+
+
+let arrfr = ['a', 'b', 'c', 'd', 'e']
+
+function each (arr, callback) {
+let newArr=[];
+let i=0;
+
+for (let elem of arr) {
+newArr.push(callback(elem, i++))
+}
+return newArr
+}
+
+function getNewArr (elem,i) {
+return elem + i ;
+}
+
+console.log(each(arrfr, getNewArr)) 
+
