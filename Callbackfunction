@@ -1,0 +1,48 @@
+//Дан массив со строками. С помощью созданной нами функции each переверните символы каждой строки в обратном порядке.
+
+
+/* let str = ['Alena' , 'Katya' , 'Masha'];
+
+function each(arr, callback) {
+  let result = [];
+  
+  for (let elem of arr) {
+    result.push( callback(arr) ); // вызываем функцию-коллбэк
+  }
+  
+  return result;
+}
+
+function getReverse(elem) {
+
+return elem.reverse()
+
+}
+
+
+console.log(each(str,getReverse ))
+
+/////  */
+
+
+
+let str = ['Alena' , 'Katya' , 'Masha'];
+
+function each(arr, callback) {
+	let result = [];
+	
+	for (let elem of arr) {
+		result.push( callback(arr) ); // вызываем функцию-коллбэк
+	}
+	
+	return result;
+}
+
+function getReverse(elem) {
+
+return elem.map((item ) => item[0].toUpperCase + item.slice(1))
+
+}
+
+
+console.log(each(str,getReverse ))
