@@ -1,0 +1,43 @@
+//Калькулятор квадрата
+
+function calc (n) {
+let sum = (n+n)/2
+let square = n*n;
+return `Cумма: ${sum} , Площадь: ${square} `
+
+}
+
+console.log(calc(5))
+
+
+//Калькулятор прямоугольника 
+
+
+function calc (n, k) {
+let sum = (n+k)/2 
+let square = n*k;
+return `Cумма: ${sum} , Площадь: ${square} `
+
+}
+
+console.log(calc(5,6))
+
+
+//Сделайте калькулятор, который будет находить площадь круга и длину окружности.
+
+function calc (d) {
+let sum = 2 * Math.round(Math.PI * d);
+let square = Math.round (Math.PI * (d**2));
+return `Cумма: ${sum} , Площадь: ${square} `
+
+}
+
+// Сделайте калькулятор, который будет находить площадь треугольника по трем сторонам.
+
+
+function calc (d , k , p) {
+let square = d * k * p;
+return ` Площадь: ${square} `
+}
+
+console.log(calc(5,6,8))
