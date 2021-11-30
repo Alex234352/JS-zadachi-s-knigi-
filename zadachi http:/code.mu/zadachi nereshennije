@@ -15,3 +15,22 @@ employee5: 500,
 employee6: 600,
 employee7: 700,
 };
+
+
+Дана строка. Подсчитайте сколько раз в ней встречается каждый из ее символов.
+
+
+let str = 'YA liubliu svoju stranu';
+let arr=str.split('')
+console.log(arr)
+let obj={}
+
+ for (let key of arr) {
+if (key=== undefined){
+obj[key]=+1;
+}
+else {
+obj[key]++
+}
+}
+console.log(obj) 
