@@ -46,7 +46,19 @@ sum= arr[i-1] + arr[i+1] + arr[i]
 
 console.log(sum)
 
+//Получение чисел Фибоначчи в JavaScript
 
+let one = 0;
+let two = 1;
+
+for (let i = 1; i <= 10; i++) {
+	let current = one + two;
+	
+	one = two;
+	two = current;
+	
+	console.log(current);
+}
 
 
 
