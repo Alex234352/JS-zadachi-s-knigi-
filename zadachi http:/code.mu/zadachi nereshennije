@@ -78,5 +78,19 @@ for (let i = 1; i <= 10; i++) {
 	console.log(current);
 }
 
+/* Сделайте функцию delElem, которая параметрами будет принимать значение и массив и удалять из массива все элементы с таким значением. */
+
+let delElem = (num, arr) => {
+
+for (let i=0; i<arr.length; i++) {
+if (arr[i]===num) {
+ arr.splice(i, 1)
+}
+}
+return arr
+}
+console.log(delElem ('fgh4' , ['2ad', '3fgh' , 'fgh4']))
+
+
 
 
