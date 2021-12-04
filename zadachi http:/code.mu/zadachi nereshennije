@@ -141,3 +141,28 @@ return [].concat(first,second)
 
 console.log(getDiff(arr3,arr4))
 
+
+
+///Реализуем функцию shuffle, параметром принимающую массив и перемешивающую его элементы в случайном порядке.
+///Давайте рассмотрим алгоритм решения данной задачи.
+///Я предлагаю следующее: запустим цикл и в каждой итерации будем вырезать случайный элемент массива и записывать его в новый массив. Будем повторять пока элементы не закончатся. Полученный новый массив и будет содержать элементы старого массива в случайном порядке.
+
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let getNewArr = (arr) => {
+let result=[]
+
+while (arr.length >0){
+let random=getRandomInt(0,arr.length-1)
+let elems=arr.splice(random,1)[0]
+result.push(elems)
+}
+return result
+}
+
+console.log(getNewArr([1, 2, 3, 4, 5]))
+
+
+
